@@ -161,8 +161,7 @@ iex> Greeter.hello("Minh") "Chào Minh"
 ```
 defmodule Greeter do 
 	def hello(name), do: phrase <> name 
-    
-    defp phrase, do: "Chào " end
+	defp phrase, do: "Chào " end
 ```
 
 ```
