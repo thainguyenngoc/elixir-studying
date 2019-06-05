@@ -283,3 +283,17 @@ iex> Enum.reduce([1, 2, 3], fn(x, acc) -> x + acc end)
 iex> Enum.reduce(["a","b","c"], "1", fn(x,acc)-> x <> acc end)
 "cba1"
 ```
+## 4. Protocols
+Protocol là cơ chế trong việc đạt được tính đa hình trong Elixir
+```
+defprotocol Blank do
+  @doc "Returns true if data is considered blank/empty"
+  def blank?(data)
+end
+defimpl Blank, for: List do
+  def blank?([]), do: true
+  def blank?(_), do: false
+end
+
+Blank.blank?([])  # → true
+```
