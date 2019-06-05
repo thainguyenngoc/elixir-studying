@@ -68,7 +68,7 @@ iex> [1, 2, 3, 4] -- [2, 4] # difference
 ```
 -	Tuples: cũng tương tự như list nhưng được lưu trữ một cách liên tục trên bộ nhớ.
 ```
-**{ 1, 2 }** **{ :ok, 42, "next" }** **{ :error, :enoent }**
+{ 1, 2 } { :ok, 42, "next" } { :error, :enoent }
 ```
 -	Keyword List: Là kiểu dictionary, là một tuple đặc biệt, với phần tử đầu là một atom.
 ```
